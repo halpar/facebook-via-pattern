@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/profilepage.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c938557ed7.js" crossorigin="anonymous"></script>
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top">
+        <div class="container">
+            <div class="navigation-left">
+                <div id="nav-icon">
+                    <a href="#">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                </div>
+                <div id="search">
+                    <input type="text" id="search-input" placeholder="Ara">
+                    <div class="search-icon">
+                        <img src="http://icons.iconarchive.com/icons/icons8/ios7/256/Very-Basic-Search-icon.png"></img>
+                    </div>
+                </div>
+            </div>
+            <div id="navigation-right">
+                <div class="nav-div" id="nav-profile">
+                    <a href="">
+                        <img src="https://via.placeholder.com/30" alt="profileimage">
+                        <p id="name-p" class="nav-p">#Name</p>
+                    </a>
+                </div>
+                <div class="nav-div" id="nav-homepage">
+                    <a href="">
+                        <p class="nav-p">Ana Sayfa</p>
+                    </a>
+                </div>
+                <div class="nav-div" id="nav-create">
+                    <a href="">
+                        <p class="nav-p">Oluştur</p>
+                    </a>
+                </div>
+                <div class="nav-icons" id="nav-friendrequests">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <div class="nav-icons" id="nav-messages">
+                    <i class="fab fa-facebook-messenger"></i>
+                </div>
+                <div class="nav-icons" id="nav-notifications">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="nav-icons" id="nav-fasthelp">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="nav-icons" id="nav-dropdown-left">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="content-wrapper" class="container">
+        <div class="row">
+            <div id="profile-wrapper" class="col-sm-12">
+                <div class="profile-top">
+                    <div class="profile-top-header">
+                        <div class="profile-top-header-banner">
+                            <img src="https://via.placeholder.com/900x300" alt="">
+                        </div>
+                        <div class="edit-banner-photo-button">
+                            <button type="submit"><i class="fas fa-camera"></i></button>
+                        </div>
+                        <div class="profile-top-header-bottom-div">
+                            <div class="username-holder">
+                                <span>#UserName</span>
+                            </div>
+                            <div class="button-group">
+                                <button id="activities-btn" class="custom-button">
+                                    <i class="fas fa-list"></i>&nbsp; Hareketler Dökümü &nbsp;&nbsp;
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                                <button id="edit-profile-btn" class="custom-button">
+                                    <i class="fas fa-pencil-alt"></i>&nbsp; Profili Düzenle
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-top-footer">
+                        <div class="profile-top-footer-imageholder">
+                            <div id="profile-photo-edit" class="edit-banner-photo-button">
+                                <button type="submit"><i class="fas fa-camera"></i></button>
+                            </div>
+                            <img src="https://via.placeholder.com/180x180" alt="">
+                        </div>
+                        <div class="profile-top-footer-buttons-container">
+                            <form class="profile-footer-form" id="profile-friends" action="" method="POST">
+                                <input type="text" hidden>
+                                <button class="custom-profile-button" type="submit">Zaman Tüneli</button>
+                            </form>
+                            <form class="profile-footer-form" id="profile-friends" action="" method="POST">
+                                <input type="text" hidden>
+                                <button class="custom-profile-button" type="submit">Hakkında</button>
+                            </form>
+                            <form class="profile-footer-form" id="profile-about" action="" method="POST">
+                                <input type="text" hidden>
+                                <button class="custom-profile-button" type="submit">Arkadaşlar</button>
+                            </form>
+                            <form class="profile-footer-form" id="profile-photos" action="" method="POST">
+                                <input type="text" hidden>
+                                <button class="custom-profile-button" type="submit">Fotoğraflar</button>
+                            </form>
+                            <form class="profile-footer-form" id="profile-archive" action="" method="POST">
+                                <input type="text" hidden>
+                                <button class="custom-profile-button" type="submit">
+                                    <i class="fas fa-lock"></i>
+                                    Arşiv
+                                </button>
+                            </form>
+                            <form class="profile-footer-form" id="profile-other" action="" method="POST">
+                                <input type="text" hidden>
+                                <button class="custom-profile-button" type="submit">
+                                    Diğer <i class="fas fa-sort-down"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-content-wrapper row">
+                    <div id="profile-content-left" class="col-sm-5">
+                        <div class="profile-content-tag">
+                            <div id="profile-content-tag-top">
+                                <div class="profile-content-tag-header">
+                                    <span><i class="fas fa-globe-europe" style="color: #5D94FE;"></i> &nbsp;Künye</span>
+                                </div>
+                                <div class="profile-content-tag-content">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum.</p>
+                                </div>
+                                <div class="profile-content-tag-footer">
+                                    <button>Biyografiyi Düzenle</button>
+                                </div>
+                            </div>
+                            <div id="profile-content-tag-bottom">
+                                <p class="tag-cityliving"><i class="fas fa-home"></i> &nbsp;Yaşadığı şehir</p>
+                                <p class="tag-workinfo"><i class="fas fa-briefcase"></i> &nbsp;İşyeri</p>
+                                <p class="tag-education"><i class="fas fa-graduation-cap"></i> &nbsp;Okul</p>
+                                <p class="tag-bornplace"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;Memleketi</p>
+                                <p class="tag-relationship"><i class="far fa-heart"></i> &nbsp;İlişki durumu</p>
+                            </div>
+                        </div>
+                        <div class="profile-content-media">
+                            <span><i class="fas fa-photo-video" style="color: lightgreen;"></i> &nbsp;Fotoğraflar</span>
+                            <a href="">Fotoğraf Ekle</a>
+                        </div>
+                        <div class="profile-content-media">
+                            <span><i class="fas fa-user-friends" style="color:#F50E6B;"></i> &nbsp;Arkadaşlar</span>
+                            <a href="">Arkadaşlarını bul</a>
+                        </div>
+                    </div>
+                    <div class="profile-content-right col-sm-7">
+                        <div class="media">
+                            <div class="media-wrapper">
+                                <div class="media-top">
+                                    <div class="media-header">
+                                        <div class="media-header-image-container">
+                                            <img class="img-general" src="https://via.placeholder.com/64x64"
+                                                 alt="profileimage">
+                                        </div>
+                                        <div class="media-header-text-container">
+                                            <div class="media-header-text-top">
+                                                <form id="tweet-go-userprofile" action="" name="post-header"
+                                                      method="post">
+                                                    <input type="text" name="UserId" value="#tweet.User.UserId"
+                                                           id="tweet-userid" hidden />
+                                                    <button class="post-button-custom" type="submit"
+                                                            id="username-tag">
+                                                        #NameSurname
+                                                    </button>
+                                                </form>
+                                                <a href="">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </a>
+                                            </div>
+                                            <div class="media-header-text-bottom">
+                                                <span>12dk .</span>
+                                                <a href="">
+                                                    <i class="fas fa-user-check"
+                                                       style="font-size: 0.8rem; color: gray;"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-content">
+                                        <div class="media-content-text">
+                                            <span>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+                                                harum
+                                                assumenda corporis totam rem labore molestias quae repellat numquam
+                                                corrupti in
+                                                id quos fuga, velit debitis at soluta, tempore ab?
+                                            </span>
+                                        </div>
+                                        <div class="media-content-footer">
+                                            <div class="media-content-footer-likecount">
+                                                <i class="far fa-thumbs-up" style="color: #5D94FE;"></i>
+                                                <a href="">
+                                                    <span>30 Beğeni</span>
+                                                </a>
+                                            </div>
+                                            <div class="media-content-footer-commentcount">
+                                                <i class="far fa-comment-dots" style="color: #5D94FE;"></i>
+                                                <a href="">
+                                                    <span> 30 Yorum</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-footer">
+                                        <form id="post-homepage-form" action="" name="share-form" method="post">
+                                            <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                            <button type="submit" id="like-btn">
+                                                <i class="far fa-thumbs-up"></i>
+                                                Beğen
+                                            </button>
+                                        </form>
+                                        <form id="post-homepage-form" action="" name="share-form" method="post">
+                                            <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                            <button type="submit" id="like-btn">
+                                                <i class="far fa-comment-dots"></i>
+                                                Yorum
+                                                Yap
+                                            </button>
+                                        </form>
+                                        <form id="post-homepage-form" action="" name="share-form" method="post">
+                                            <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                            <button type="submit" id="like-btn" class="">
+                                                <i class="far fa-share-square"></i>
+                                                Paylaş
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="media-comment-section">
+                                    <div class="media-comment-user-imageholder">
+                                        <img src="https://via.placeholder.com/48x48" alt="">
+                                    </div>
+                                    <div class="media-comment-user-text">
+                                        <div class="media-comment-user-name">
+                                            <span>Name Surname</span>
+                                        </div>
+                                        <div class="media-comment-user-post">
+                                            <span>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+                                                doloremque.
+                                                Optio minus rerum officia, unde maiores repellat amet consequuntur,
+                                                laudantium
+                                                necessitatibus error nostrum voluptas? Voluptatum quia nam quaerat
+                                                tenetur
+                                                beatae officiis doloremque, laborum ratione nemo?
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-bottom">
+                                    <form id="form-comment" action="" name="comment-form" method="post">
+                                        <div class="send-comment-div">
+                                            <input type="text" name="CommentText" id="comment-text"
+                                                   placeholder="Yanıt Yaz..." required>
+                                            <button type="submit" id="send-comment-button">
+                                                <i class="far fa-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

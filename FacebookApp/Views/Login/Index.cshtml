@@ -1,0 +1,434 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html class="ltr" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome - Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="./css/login.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">baseUrl = "index.html"; token_id = "d3684b6270c07ffff7b25d9f403e4e5a"; search_users_url = "search/index.html"; search_tags_url = "search/tag/index.html"; search_groups_url = "search/groups/index.html"; search_pages_url = "search/pages/index.html"; lng_download = "Download"; lng_close = "Close"; lng_just_now = "just now"; lng_ta_second = "a second"; lng_ta_seconds = "seconds"; lng_ta_minute = "a minute"; lng_ta_minutes = "%d minutes"; lng_ta_hour = "an hour"; lng_ta_hours = "%d hours"; lng_ta_day = "a day"; lng_ta_days = "%d days"; lng_ta_week = "a week"; lng_ta_weeks = "%d weeks"; lng_ta_month = "a month"; lng_ta_months = "%d months"; lng_ta_year = "a year"; lng_ta_years = "%d years"; lng_ago = "ago"; lng_dir = "ltr";</script>
+</head>
+
+<body>
+    <div id="loading-bar">
+    </div>
+    <div class="topbar">
+        <div class="header">
+            <form id="userLoginForm" action="" method="POST" autocomplete="off">
+                <img id="header-logo-fb" src="./img/fblogo.jpg" alt="facebooklogo">
+                <button type="submit" name="login" class="login-button">Giriş Yap</button>
+                <div id="login-form-div">
+                    <div class="usrdiv">
+                        <p>E-posta veya telefon</p>
+                        <input id="login-email-input" type="email" name="Email" value="" required>
+                    </div>
+                    <div class="pswrdiv">
+                        <p>Şifre</p>
+                        <input id="login-password-input" type="password" name="Password" value="" required>
+                        <p id="forgotpwd-id" class="forgot-password">
+                            <a href="recover.html" rel="loadpage">
+                                Hesabını mı
+                                unuttun?
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="search-container"></div>
+    </div>
+    <div id="content">
+
+        <div class="row-welcome content-welcome">
+            <div class="row-body">
+                <div class="welcome-inner">
+                    <div class="welcome-message">
+                        <div class="welcome-desc">
+                            <span>Dünya ile bağlantı kur</span>
+                        </div>
+                        <div class="welcome-features">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                     viewBox="0 0 172 172" style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                       stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                       stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                       font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <path d="M60.2,172c-33.24754,0 -60.2,-26.95246 -60.2,-60.2v-51.6c0,-33.24754 26.95246,-60.2 60.2,-60.2h51.6c33.24754,0 60.2,26.95246 60.2,60.2v51.6c0,33.24754 -26.95246,60.2 -60.2,60.2z"
+                                              fill="#ffffff"></path>
+                                        <g fill="#5a89d0">
+                                            <path d="M116.272,42.484c-7.30312,0 -13.244,5.94088 -13.244,13.244c0,3.49223 1.36821,6.66273 3.58445,9.03134l-15.83441,19.34866h-21.95755c-0.92305,-6.40742 -6.4335,-11.352 -13.09249,-11.352c-7.30312,0 -13.244,5.94088 -13.244,13.244c0,7.30312 5.94088,13.244 13.244,13.244c6.65899,0 12.16944,-4.94458 13.09249,-11.352h21.9132l15.19513,20.12837c-1.81195,2.26587 -2.90082,5.13126 -2.90082,8.25163c0,7.30312 5.94088,13.244 13.244,13.244c7.30312,0 13.244,-5.94088 13.244,-13.244c0,-7.30312 -5.94088,-13.244 -13.244,-13.244c-2.81342,0 -5.41698,0.88931 -7.5643,2.39087l-14.62605,-19.37083l15.47966,-18.9237c1.97117,1.1654 4.25947,1.84766 6.71069,1.84766c7.30312,0 13.244,-5.94088 13.244,-13.244c0,-7.30312 -5.94088,-13.244 -13.244,-13.244z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="welcome-feature">
+                                <div class="welcome-feature-title">
+                                    Bağlan
+                                </div>
+
+                                <div class="welcome-feature-desc">
+                                    Ailenle ve arkadaşlarınla iletişime geç.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; margin-top: 35px;">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                     viewBox="0 0 172 172" style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                       stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                       stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                       font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <path d="M60.2,172c-33.24754,0 -60.2,-26.95246 -60.2,-60.2v-51.6c0,-33.24754 26.95246,-60.2 60.2,-60.2h51.6c33.24754,0 60.2,26.95246 60.2,60.2v51.6c0,33.24754 -26.95246,60.2 -60.2,60.2z"
+                                              fill="#ffffff"></path>
+                                        <g fill="#5a89d0">
+                                            <path d="M102.01415,45.81208c-1.63312,0.00043 -3.10314,0.99031 -3.71767,2.5034c-0.61453,1.51309 -0.25102,3.24765 0.91932,4.38668l9.20245,9.20245h-2.35156c-24.33447,0 -44.14667,19.81219 -44.14667,44.14667c-0.02047,1.44735 0.73996,2.79361 1.9901,3.52326c1.25014,0.72965 2.79632,0.72965 4.04646,0c1.25014,-0.72965 2.01057,-2.0759 1.9901,-3.52326c0,-19.99681 16.12319,-36.12 36.12,-36.12h2.35156l-9.20245,9.20245c-1.04845,1.00661 -1.47079,2.50138 -1.10414,3.90782c0.36665,1.40644 1.46499,2.50478 2.87143,2.87143c1.40644,0.36665 2.90121,-0.0557 3.90782,-1.10414l16.05333,-16.05333c1.56668,-1.56733 1.56668,-4.10778 0,-5.6751l-16.05333,-16.05333c-0.75559,-0.77671 -1.79314,-1.21491 -2.87675,-1.21497zM49.8173,69.8764c-2.21342,0.0346 -3.98094,1.85472 -3.95063,4.0682v40.13333c0,6.60181 5.43819,12.04 12.04,12.04h56.18667c6.60181,0 12.04,-5.43819 12.04,-12.04v-4.01333c0.02047,-1.44735 -0.73996,-2.79361 -1.9901,-3.52326c-1.25014,-0.72965 -2.79632,-0.72965 -4.04646,0c-1.25014,0.72965 -2.01057,2.0759 -1.9901,3.52326v4.01333c0,2.26765 -1.74568,4.01333 -4.01333,4.01333h-56.18667c-2.26765,0 -4.01333,-1.74568 -4.01333,-4.01333v-40.13333c0.01486,-1.08481 -0.41007,-2.12942 -1.17795,-2.89583c-0.76788,-0.76641 -1.81331,-1.18932 -2.89809,-1.17238z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="welcome-feature">
+                                <div class="welcome-feature-title">
+                                    Paylaş
+                                </div>
+
+                                <div class="welcome-feature-desc">
+                                    Hayatındaki önemli anlarını tanıdıklarınla paylaş.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; margin-top: 35px;">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                     viewBox="0 0 172 172" style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                       stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                       stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                       font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <path d="M60.2,172c-33.24754,0 -60.2,-26.95246 -60.2,-60.2v-51.6c0,-33.24754 26.95246,-60.2 60.2,-60.2h51.6c33.24754,0 60.2,26.95246 60.2,60.2v51.6c0,33.24754 -26.95246,60.2 -60.2,60.2z"
+                                              fill="#ffffff"></path>
+                                        <g fill="#5a89d0">
+                                            <path d="M78.21599,39.22932c-21.48556,0 -38.98667,17.5011 -38.98667,38.98667c0,21.48556 17.5011,38.98667 38.98667,38.98667c9.34319,0 17.92367,-3.31782 24.64841,-8.8253l23.27778,23.27778c0.97785,1.01849 2.42991,1.42877 3.79617,1.0726c1.36626,-0.35617 2.43322,-1.42313 2.78939,-2.78939c0.35617,-1.36626 -0.05411,-2.81832 -1.0726,-3.79617l-23.27778,-23.27778c5.50748,-6.72474 8.8253,-15.30522 8.8253,-24.64841c0,-21.48556 -17.5011,-38.98667 -38.98667,-38.98667zM78.21599,47.02665c17.27157,0 31.18933,13.91776 31.18933,31.18933c0,17.27157 -13.91776,31.18933 -31.18933,31.18933c-17.27157,0 -31.18933,-13.91776 -31.18933,-31.18933c0,-17.27157 13.91776,-31.18933 31.18933,-31.18933zM62.62132,74.31732c-2.15317,0 -3.89867,1.74549 -3.89867,3.89867c0,2.15317 1.74549,3.89867 3.89867,3.89867c2.15317,0 3.89867,-1.74549 3.89867,-3.89867c0,-2.15317 -1.74549,-3.89867 -3.89867,-3.89867zM78.21599,74.31732c-2.15317,0 -3.89867,1.74549 -3.89867,3.89867c0,2.15317 1.74549,3.89867 3.89867,3.89867c2.15317,0 3.89867,-1.74549 3.89867,-3.89867c0,-2.15317 -1.74549,-3.89867 -3.89867,-3.89867zM93.81065,74.31732c-2.15317,0 -3.89867,1.74549 -3.89867,3.89867c0,2.15317 1.74549,3.89867 3.89867,3.89867c2.15317,0 3.89867,-1.74549 3.89867,-3.89867c0,-2.15317 -1.74549,-3.89867 -3.89867,-3.89867z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="welcome-feature">
+                                <div class="welcome-feature-title">
+                                    Keşfet
+                                </div>
+
+                                <div class="welcome-feature-desc">
+                                    Yeni insanlar keşfet , yeni bağlantılar kur ve yeni arkadaşlar edin.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="welcome-inputs">
+                        <div class="welcome-desc">
+                            Yeni Bir Hesap Oluştur
+                            <p>Hızlı ve kolaydır.</p>
+                        </div>
+                        <form id="userRegisterForm" action="" method="POST" autocomplete="off">
+                            <input id="register-name" class="register-name-inputs" type="text" name="Name" placeholder="Adın" value="" required>
+                            <input id="register-surname" class="register-name-inputs" type="text" name="SurName"
+                                   placeholder="Soyadın" value="">
+                            <input id="register-email" type="text" name="Email" placeholder="E-posta" value="" required>
+                            <input id="register-phonenumber" type="number" name="Phone" placeholder="Cep telefonu numarası" value="" required>
+                            <input id="register-password" type="password" name="Password" placeholder="Yeni şifre" value="" required>
+                            <label class="birth-gender-labels" for="birth-date">Doğum tarihi</label>
+                            <input id="birth-date" type="date" name="BirthDate" required>
+                            <label id="gender-id" class="birth-gender-labels" for="gender-select">Cinsiyet</label>
+                            <div class="gender-select">
+                                <div class="genderdivs">
+                                    <input type="radio" style="width:15px; height:15px;" id="male" name="Gender" value="male">
+                                    <label for="male">Erkek</label><br>
+                                </div>
+                                <div class="genderdivs">
+                                    <input type="radio" style="width:15px; height:15px;" id="female" name="Gender" value="female">
+                                    <label for="female">Kadın</label><br>
+                                </div>
+                                <div class="genderdivs">
+                                    <input type="radio" style="width:15px; height:15px;" id="other" name="Gender" value="other">
+                                    <label for="other">Diğer</label>
+                                </div>
+                            </div>
+                            <p id="terms-warn">
+                                Kaydol düğmesine tıklayarak, Koşullarımızı, Veri İlkemizi ve Çerezler İlkemizi kabul
+                                etmiş olursun. Bizden SMS Bildirimleri alabilir ve bu bildirimleri istediğin zaman
+                                durdurabilirsin.
+                            </p>
+                            <button type="submit" name="register" class="register-button">Kaydol</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="welcome-users">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="share">
+        <div class="modal-container">
+            <div class="modal-inner">
+                <div class="modal-title">Share</div>
+            </div>
+            <div class="message-divider"></div>
+            <div class="modal-inner">
+                <div class="modal-desc" id="share-desc">
+                    Are you sure do you want to share this message on your timeline?
+                </div>
+                <div class="modal-result" id="share-result"></div>
+            </div>
+            <div class="message-divider"></div>
+            <div class="modal-menu">
+                <div class="modal-cancel button-normal" id="share-cancel"><a onclick="doShare(0, 0)">Cancel</a></div>
+                <div class="modal-btn button-active" id="share-btn"><a>Share</a></div>
+                <div class="modal-close button-normal" id="share-close"><a onclick="doShare(0, 0)">Close</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="delete">
+        <div class="modal-container">
+            <div class="modal-inner">
+                <div class="modal-title">Delete</div>
+            </div>
+            <div class="message-divider"></div>
+            <div class="modal-inner">
+                <div class="modal-desc" id="delete0">Are you sure you want to delete this comment?</div>
+                <div class="modal-desc" id="delete1">Are you sure you want to delete this message?</div>
+                <div class="modal-desc" id="delete2">Are you sure you want to delete this chat message?</div>
+                <div class="modal-result"></div>
+            </div>
+            <div class="message-divider"></div>
+            <div class="modal-menu">
+                <div class="modal-cancel button-normal" id="delete-cancel">
+                    <a onclick="deleteModal(0, 999)">Cancel</a>
+                </div>
+                <div class="modal-btn button-active" id="delete-btn"><a>Delete</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="camera">
+        <div class="modal-container modal-container-large modal-container-wide">
+            <div class="modal-inner">
+                <div class="modal-title">Camera</div>
+            </div>
+            <div class="message-divider"></div>
+            <div class="modal-inner">
+                <video id="camera-video" width="380" height="285" autoplay></video>
+                <canvas id="camera-canvas" width="380" height="285" style="display: none;"></canvas>
+            </div>
+            <div class="message-divider"></div>
+            <div class="modal-menu">
+                <div class="modal-cancel button-normal" id="camera-cancel"><a onclick="cameraModal(1)">Cancel</a></div>
+                <div class="modal-btn button-active" id="camera-btn"><a onclick="cameraModal(2)">Capture</a></div>
+                <div class="modal-btn button-active" id="camera-send-btn" style="display: none;">
+                    <a onclick="postChatImage(1)">Send</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery">
+        <div id="gallery-close"></div>
+        <div class="image-container">
+            <div class="gallery-container">
+                <div class="image-content"></div>
+                <div id="gallery-prev"></div>
+                <div id="gallery-next"></div>
+                <div class="gallery-close" onclick="gallery('close')"></div>
+                <div class="gallery-footer">
+                    <div class="gallery-footer-container">
+                        - <a onclick="gallery('close')">
+                            <div class="delete_btn"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-background"></div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <span><a href="info/tos.html" rel="loadpage">Terms of Use</a></span><span>
+                    <a href="info/privacy.html"
+                       rel="loadpage">Privacy Policy</a>
+                </span><span>
+                    <a href="info/disclaimer.html"
+                       rel="loadpage">Disclaimer</a>
+                </span><span>
+                    <a href="info/contact.html"
+                       rel="loadpage">Contact</a>
+                </span><span>
+                    <a href="info/about.html"
+                       rel="loadpage">About</a>
+                </span><span>
+                    <a href="index3ee7.html?a=admin"
+                       rel="loadpage">Admin</a>
+                </span>
+            </div>
+            <div class="footer-languages">
+                Language: <span><a href="index1d29.html?lang=english">English</a></span>
+            </div>
+            <div class="footer-languages">
+                Copyright &copy; 2020 phpSocial. All rights reserved. Powered by <a href="https://phpsocial.com/"
+                                                                                    target="_blank">phpSocial</a>.
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const loginForm = document.getElementById('userLoginForm');
+        const registerForm = document.getElementById('userRegisterForm');
+
+        loginForm.addEventListener("submit", validateForm);
+
+        function validateForm() {
+
+            console.log("validateformiçi");
+            event.preventDefault();
+
+            var obj = {
+                Email: $("#login-email-input").val(),
+                Password: $("#login-password-input").val(),
+            }
+
+            event.preventDefault();
+
+            const usrName = document.forms["userLoginForm"]["login-email-input"].value;
+            const pswrd = document.forms["userLoginForm"]["login-password-input"].value;
+
+            console.log(usrName);
+            console.log(pswrd);
+
+            $.ajax({
+                type: "POST",
+                data: obj,
+                url: "/Login/Login",
+                success: function (response) {
+
+                    window.alert(response.message);
+
+                    switch (response.message) {
+                        case "Giriş Başarılı":
+
+                            setTimeout(function () {
+                                openHomePage();
+                            }, 2000);
+                            break;
+
+                        case "Hatalı parola veya kullanıcı adı":
+                            window.alert(response.message);
+                            break;
+                        default:
+                    }
+                },
+                error: function (response) {
+                    console.log("error");
+                }
+            });
+
+        }
+
+        function openHomePage() {
+            window.location.href = "/Home";
+        }
+
+        registerForm.addEventListener('submit', Register);
+
+        function Register() {
+            event.preventDefault();
+
+            var ele = document.getElementsByName('Gender');
+            var gender;
+
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].checked) {
+                    gender = ele[i].value;
+                    console.log(gender);
+                }
+            }
+
+            var regName = $("#register-name").val();
+            var regSurname = $('#register-surname').val();
+            var regEmail = $('#register-email').val();
+            var regPhonenumber = $("#register-phonenumber").val();
+            var regPassword = $("#register-password").val();
+            var regBirthdate = $("#birth-date").val();
+
+            var obj = {
+                Name: regName,
+                Surname: regSurname,
+                Email: regEmail,
+                Phone: regPhonenumber,
+                Password: regPassword,
+                BirthDate: regBirthdate,
+                Gender: gender,
+                //ProfileImage: $("#register-profile-photo").val(),
+            }
+
+            $.ajax({
+                type: "POST",
+                data: obj,
+                url: "/Login/Register",
+                success: function (response) {
+
+                    switch (response.message) {
+                        case "Bu kullanıcı zaten kayıtlı":
+
+                            window.alert("Bu kullanıcı zaten kayıtlı");
+
+                            break;
+                        case "Kayıt başarılı":
+
+                            window.alert("Kayıt başarılı");
+                            regName = "";
+                            regSurname = "";
+                            regEmail = "";
+                            regPhonenumber = "";
+                            regBirthdate = "";
+                            ele.checked = false;
+
+                            break;
+                        case "Verilerde hata var.":
+
+                            window.alert("Verilerde hata var");
+
+                            break;
+
+                        default:
+
+                    }
+
+                },
+                error: function (response) {
+                    console.log("error");
+                }
+            });
+        }
+
+    </script>
+
+</body>
+</html>

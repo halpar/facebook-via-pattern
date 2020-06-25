@@ -1,0 +1,676 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/homepage.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/carousel.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c938557ed7.js" crossorigin="anonymous"></script>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top">
+        <div class="container">
+            <div class="navigation-left">
+                <div id="nav-icon">
+                    <a href="#">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                </div>
+                <div id="search">
+                    <input type="text" id="search-input" placeholder="Ara">
+                    <div class="search-icon">
+                        <img src="http://icons.iconarchive.com/icons/icons8/ios7/256/Very-Basic-Search-icon.png">
+                    </div>
+                </div>
+            </div>
+            <div id="navigation-right">
+                <div class="nav-div" id="nav-profile">
+                    <a href="">
+                        <img src="https://via.placeholder.com/30" alt="profileimage">
+                        <p id="name-p" class="nav-p">#Name</p>
+                    </a>
+                </div>
+                <div class="nav-div" id="nav-homepage">
+                    <a href="">
+                        <p class="nav-p">Ana Sayfa</p>
+                    </a>
+                </div>
+                <div class="nav-div" id="nav-create">
+                    <a href="">
+                        <p class="nav-p">Oluştur</p>
+                    </a>
+                </div>
+                <div class="nav-icons" id="nav-friendrequests">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <div class="nav-icons" id="nav-messages">
+                    <i class="fab fa-facebook-messenger"></i>
+                </div>
+                <div class="nav-icons" id="nav-notifications">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="nav-icons" id="nav-fasthelp">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="nav-icons" id="nav-dropdown-left">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content-wrapper" class="container">
+        <div class="row">
+            <div id="leftside" class="col-sm-2">
+                <div id="profile-grid-left">
+                    <a href="">
+                        <img src="https://via.placeholder.com/18" alt="profileimage">
+                        <span class="left-span">#Name #Surname</span>
+                    </a>
+                </div>
+                <div id="leftgroup-1">
+                    <div id="news-grid" class="left-group-1">
+                        <a href="">
+                            <i class="far fa-newspaper"></i>
+                            <span class="left-span">Haber Kaynağı</span>
+                        </a>
+                    </div>
+                    <div id="messenger-grid" class="left-group-1">
+                        <a href="">
+                            <i class="fab fa-facebook-messenger"></i>
+                            <span class="left-span">Messenger</span>
+                        </a>
+                    </div>
+                    <div id="watch-grid" class="left-group-1">
+                        <a href="">
+                            <i class="fas fa-desktop"></i>
+                            <span class="left-span">Watch</span>
+                        </a>
+                    </div>
+                    <div id="marketplace-grid" class="left-group-1">
+                        <a href="">
+                            <i class="fas fa-store" style="color: #348978;"></i>
+                            <span class="left-span">Marketplace</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="shortcuts">
+                    <p class="left-p">Kısayollar</p>
+                    <div id="news-grid" class="left-group-1">
+                        <a href="">
+                            <i class="fas fa-users" style="color: #616770;"></i>
+                            <span class="left-span">#visitedgroup</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="explore">
+                    <p class="left-p">Keşfet</p>
+                    <div id="pages" class="left-group-1">
+                        <a href="">
+                            <i class="far fa-flag" style="color: #F37B2B;"></i>
+                            <span class="left-span">Sayfalar</span>
+                        </a>
+                    </div>
+                    <div id="activities" class="left-group-1">
+                        <a href="">
+                            <i class="far fa-calendar" style="color:#B30F3C"></i>
+                            <span class="left-span">Etkinlikler</span>
+                        </a>
+                    </div>
+                    <div id="groups" class="left-group-1">
+                        <a href="">
+                            <i class="fas fa-users" style="color: #5D94FE;"></i>
+                            <span class="left-span">Groups</span>
+                        </a>
+                    </div>
+                    <div id="donations" class="left-group-1">
+                        <a href="">
+                            <i class="fas fa-coins" style="color: #FCD873;"></i>
+                            <span class="left-span">Bağış kampanyaları</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="middle" class="col-sm-7">
+                <div id="my-post">
+                    <form id="post-homepage" action="" name="postform" method="post">
+                        <div id="postheader">
+                            <p>Gönderi Oluştur</p>
+                        </div>
+                        <div id="post-content">
+                            <div id="content-sub">
+                                <div id="postimage">
+                                    <img src="https://via.placeholder.com/64" alt="profileimage">
+                                </div>
+                                <div id="textarea">
+                                    <textarea name="PostText" id="txtpost" placeholder="Ne düşünüyorsun #Name?"
+                                              cols="80" rows="2" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="postfooter">
+                            <div id="icon-group">
+                                <a class="ftr-group" href="">
+                                    <i class="fas fa-image" style="color: #41B619;"></i>
+                                    Fotograf/Video
+                                </a>
+                                <a class="ftr-group" href="">
+                                    <i class="far fa-plus-square" style="color: #5D94FE;"></i>
+                                    Etiketle
+                                </a>
+                                <a class="ftr-group" href="">
+                                    <i class="fas fa-video" style="color: #FFD600;"></i>
+                                    Oda
+                                    Oluştur
+                                </a>
+                            </div>
+                            <button type="submit" id="share-button" class="custom-button">
+                                Paylaş
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div id="recommended-wrapper">
+                    <div id="recommended-hdr">
+                        <p>Tanıyor Olabileceğin Kişiler</p>
+                        <a href="">
+                            <i class="fas fa-ellipsis-h" style="color: gray;"></i>
+                        </a>
+                    </div>
+                    <div id="recommended-carousel">
+                        <div class="carousel-wrapper">
+                            <div id="carousel-recommended-connections" class="carousel slide show-neighbors"
+                                 data-ride="carousel" data-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="user-card">
+                                            <div class="user-card-image">
+                                                <img src="//placehold.it/900x900/c69/f9c/?text=1" class="d-block w-100"
+                                                     alt="">
+                                            </div>
+                                            <div class="user-card-details">
+                                                <p>#Name #Surname</p>
+                                                <span>#Ortak Arkadaş</span>
+                                            </div>
+                                            <div class="user-card-footer">
+
+                                                <button id="send-friend-req" class="custom-button">
+                                                    <i class="fas fa-user-plus"></i> Arkadaşı ekle
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="user-card">
+                                            <div class="user-card-image">
+                                                <img src="//placehold.it/900x900/9c6/cf9/?text=2" class="d-block w-100"
+                                                     alt="">
+                                            </div>
+                                            <div class="user-card-details">
+                                                <p>#Name #Surname</p>
+                                                <span>#Ortak Arkadaş</span>
+                                            </div>
+                                            <div class="user-card-footer">
+
+                                                <button id="send-friend-req" class="custom-button">
+                                                    <i class="fas fa-user-plus"></i> Arkadaşı ekle
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="user-card">
+                                            <div class="user-card-image">
+                                                <img src="//placehold.it/900x900/69c/9cf/?text=3" class="d-block w-100"
+                                                     alt="">
+                                            </div>
+                                            <div class="user-card-details">
+                                                <p>#Name #Surname</p>
+                                                <span>#Ortak Arkadaş</span>
+                                            </div>
+                                            <div class="user-card-footer">
+
+                                                <button id="send-friend-req" class="custom-button">
+                                                    <i class="fas fa-user-plus"></i> Arkadaşı ekle
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="user-card">
+                                            <div class="user-card-image">
+                                                <img src="//placehold.it/900x900/69c/9cf/?text=4" class="d-block w-100"
+                                                     alt="">
+                                            </div>
+                                            <div class="user-card-details">
+                                                <p>#Name #Surname</p>
+                                                <span>#Ortak Arkadaş</span>
+                                            </div>
+                                            <div class="user-card-footer">
+                                                <button id="send-friend-req" class="custom-button">
+                                                    <i class="fas fa-user-plus"></i> Arkadaşı ekle
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a class="carousel-control-prev" href="#carousel-recommended-connections" role="button"
+                                   data-slide="prev">
+                                    <span id="prev-box" class="next-prev-class">
+                                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                                        <i class="fas fa-chevron-left" style="color: gray;"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-recommended-connections" role="button"
+                                   data-slide="next">
+                                    <span id="next-box" class="next-prev-class">
+                                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                                        <i class="fas fa-chevron-right" style="color: gray;"></i>
+                                        <span class="sr-only">Next</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="recommended-ftr">
+                        <a href="">Tümünü Gör</a>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-wrapper">
+                        <div class="media-top">
+                            <div class="media-header">
+                                <div class="media-header-image-container">
+                                    <img class="img-general" src="https://via.placeholder.com/64x64" alt="profileimage">
+                                </div>
+                                <div class="media-header-text-container">
+                                    <div class="media-header-text-top">
+                                        <form id="tweet-go-userprofile" action="" name="post-header" method="post">
+                                            <input type="text" name="UserId" value="#tweet.User.UserId"
+                                                   id="tweet-userid" hidden />
+                                            <button class="post-button-custom" type="submit"
+                                                    id="username-tag">
+                                                #NameSurname
+                                            </button>
+                                        </form>
+                                        <a href="">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </a>
+                                    </div>
+                                    <div class="media-header-text-bottom">
+                                        <span>12dk .</span>
+                                        <a href="">
+                                            <i class="fas fa-user-check" style="font-size: 0.8rem; color: gray;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-content">
+                                <div class="media-content-text">
+                                    <span>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident harum
+                                        assumenda corporis totam rem labore molestias quae repellat numquam corrupti in
+                                        id quos fuga, velit debitis at soluta, tempore ab?
+                                    </span>
+                                </div>
+                                <div class="media-content-footer">
+                                    <div class="media-content-footer-likecount">
+                                        <i class="far fa-thumbs-up" style="color: #5D94FE;"></i>
+                                        <a href="">
+                                            <span>30 Beğeni</span>
+                                        </a>
+                                    </div>
+                                    <div class="media-content-footer-commentcount">
+                                        <i class="far fa-comment-dots" style="color: #5D94FE;"></i>
+                                        <a href="">
+                                            <span> 30 Yorum</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-footer">
+                                <form id="post-homepage-form" action="" name="share-form" method="post">
+                                    <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                    <button type="submit" id="like-btn"><i class="far fa-thumbs-up"></i> Beğen</button>
+                                </form>
+                                <form id="post-homepage-form" action="" name="share-form" method="post">
+                                    <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                    <button type="submit" id="like-btn">
+                                        <i class="far fa-comment-dots"></i> Yorum
+                                        Yap
+                                    </button>
+                                </form>
+                                <form id="post-homepage-form" action="" name="share-form" method="post">
+                                    <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                    <button type="submit" id="like-btn" class="">
+                                        <i class="far fa-share-square"></i>
+                                        Paylaş
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="media-comment-section">
+                            <div class="media-comment-user-imageholder">
+                                <img src="https://via.placeholder.com/48x48" alt="">
+                            </div>
+                            <div class="media-comment-user-text">
+                                <div class="media-comment-user-name">
+                                    <span>Name Surname</span>
+                                </div>
+                                <div class="media-comment-user-post">
+                                    <span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, doloremque.
+                                        Optio minus rerum officia, unde maiores repellat amet consequuntur, laudantium
+                                        necessitatibus error nostrum voluptas? Voluptatum quia nam quaerat tenetur
+                                        beatae officiis doloremque, laborum ratione nemo?
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-bottom">
+                            <form id="form-comment" action="" name="comment-form" method="post">
+                                <div class="send-comment-div">
+                                    <input type="text" name="CommentText" id="comment-text" placeholder="Yanıt Yaz..."
+                                           required>
+                                    <button type="submit" id="send-comment-button">
+                                        <i class="far fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-wrapper">
+                        <div class="media-top">
+                            <div class="media-header">
+                                <div class="media-header-image-container">
+                                    <img class="img-general" src="https://via.placeholder.com/64x64" alt="profileimage">
+                                </div>
+                                <div class="media-header-text-container">
+                                    <div class="media-header-text-top">
+                                        <form id="tweet-go-userprofile" action="" name="post-header" method="post">
+                                            <input type="text" name="UserId" value="#tweet.User.UserId"
+                                                   id="tweet-userid" hidden />
+                                            <button class="post-button-custom" type="submit"
+                                                    id="username-tag">
+                                                #NameSurname
+                                            </button>
+                                        </form>
+                                        <a href="">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </a>
+                                    </div>
+                                    <div class="media-header-text-bottom">
+                                        <span>12dk .</span>
+                                        <a href="">
+                                            <i class="fas fa-user-check" style="font-size: 0.8rem; color: gray;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-content">
+                                <div class="media-content-text">
+                                    <span>#Merhaba ilk post</span>
+                                </div>
+                                <div class="media-content-footer">
+                                    <div class="media-content-footer-likecount">
+                                        <i class="far fa-thumbs-up" style="color: #5D94FE;"></i>
+                                        <a href="">
+                                            <span>30 Beğeni</span>
+                                        </a>
+                                    </div>
+                                    <div class="media-content-footer-commentcount">
+                                        <i class="far fa-comment-dots" style="color: #5D94FE;"></i>
+                                        <a href="">
+                                            <span> 30 Yorum</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-footer">
+                                <form id="post-homepage-form" action="" name="share-form" method="post">
+                                    <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                    <button type="submit" id="like-btn"><i class="far fa-thumbs-up"></i> Beğen</button>
+                                </form>
+                                <form id="post-homepage-form" action="" name="share-form" method="post">
+                                    <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                    <button type="submit" id="like-btn">
+                                        <i class="far fa-comment-dots"></i> Yorum
+                                        Yap
+                                    </button>
+                                </form>
+                                <form id="post-homepage-form" action="" name="share-form" method="post">
+                                    <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                    <button type="submit" id="like-btn" class="">
+                                        <i class="far fa-share-square"></i>
+                                        Paylaş
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="media-comment-section">
+                            <div class="media-comment-user-imageholder">
+                                <img src="https://via.placeholder.com/48x48" alt="">
+                            </div>
+                            <div class="media-comment-user-text">
+                                <div class="media-comment-user-name">
+                                    <span>Name Surname</span>
+                                </div>
+                                <div class="media-comment-user-post">
+                                    <span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, doloremque.
+                                        Optio minus rerum officia, unde maiores repellat amet consequuntur, laudantium
+                                        necessitatibus error nostrum voluptas? Voluptatum quia nam quaerat tenetur
+                                        beatae officiis doloremque, laborum ratione nemo?
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-bottom">
+                            <form id="form-comment" action="" name="comment-form" method="post">
+                                <div class="send-comment-div">
+                                    <input type="text" name="CommentText" id="comment-text" placeholder="Yanıt Yaz..."
+                                           required>
+                                    <button type="submit" id="send-comment-button">
+                                        <i class="far fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-wrapper">
+                        <div class="media-top">
+                            <div class="media-header">
+                                <div class="media-header-image-container">
+                                    <img class="img-general" src="https://via.placeholder.com/64x64" alt="profileimage">
+                                </div>
+                                <div class="media-header-text-container">
+                                    <div class="media-header-text-top">
+                                        <form id="tweet-go-userprofile" action="" name="post-header" method="post">
+                                            <input type="text" name="UserId" value="#tweet.User.UserId"
+                                                   id="tweet-userid" hidden />
+                                            <button class="post-button-custom" type="submit"
+                                                    id="username-tag">
+                                                #NameSurname
+                                            </button>
+                                        </form>
+                                        <a href="">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </a>
+                                    </div>
+                                    <div class="media-header-text-bottom">
+                                        <span>12dk .</span>
+                                        <a href="">
+                                            <i class="fas fa-user-check" style="font-size: 0.8rem; color: gray;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-content">
+                                <div class="media-content-text">
+                                    <span>#Merhaba ilk post</span>
+                                </div>
+                                <div class="media-content-footer">
+                                    <div class="media-content-footer-likecount">
+                                        <i class="far fa-thumbs-up" style="color: #5D94FE;"></i>
+                                        <a href="">
+                                            <span>30 Beğeni</span>
+                                        </a>
+                                    </div>
+                                    <div class="media-content-footer-commentcount">
+                                        <i class="far fa-comment-dots" style="color: #5D94FE;"></i>
+                                        <a href="">
+                                            <span> 30 Yorum</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-footer">
+                                <form id="post-homepage-form" action="" name="share-form" method="post">
+                                    <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                    <button type="submit" id="like-btn"><i class="far fa-thumbs-up"></i> Beğen</button>
+                                </form>
+                                <form id="post-homepage-form" action="" name="share-form" method="post">
+                                    <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                    <button type="submit" id="like-btn">
+                                        <i class="far fa-comment-dots"></i> Yorum
+                                        Yap
+                                    </button>
+                                </form>
+                                <form id="post-homepage-form" action="" name="share-form" method="post">
+                                    <input type="text" value="#tweet.TweetId" id="like-count" hidden />
+                                    <button type="submit" id="like-btn" class="">
+                                        <i class="far fa-share-square"></i>
+                                        Paylaş
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="media-comment-section">
+                            <div class="media-comment-user-imageholder">
+                                <img src="https://via.placeholder.com/48x48" alt="">
+                            </div>
+                            <div class="media-comment-user-text">
+                                <div class="media-comment-user-name">
+                                    <span>Name Surname</span>
+                                </div>
+                                <div class="media-comment-user-post">
+                                    <span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, doloremque.
+                                        Optio minus rerum officia, unde maiores repellat amet consequuntur, laudantium
+                                        necessitatibus error nostrum voluptas? Voluptatum quia nam quaerat tenetur
+                                        beatae officiis doloremque, laborum ratione nemo?
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-bottom">
+                            <form id="form-comment" action="" name="comment-form" method="post">
+                                <div class="send-comment-div">
+                                    <input type="text" name="CommentText" id="comment-text" placeholder="Yanıt Yaz..."
+                                           required>
+                                    <button type="submit" id="send-comment-button">
+                                        <i class="far fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rightside" class="col-sm-3">
+                <div id="birthday-notification" class="rightside-notifications">
+
+                </div>
+                <div class="rightside-notifications"></div>
+                <div id="localization-right" class="rightside-notifications">
+                    <a href="">Türkçe</a>
+                    <a href="">English(US)</a>
+                    <a href="">Español</a>
+                </div>
+                <div id="footer">
+                    <a href="">Gizlilik </a> .
+                    <a href="">Koşullar</a> .
+                    <a href="">Reklamlar</a> .
+                    <a href="">Ad choices</a> .
+                    <a href="">Çerezler</a> .
+                    <a href="">Diğer</a> .
+                    <a href="">Facebook © 2020</a>
+                </div>
+            </div>
+            <div id="pop-up">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const popUp = document.getElementById("pop-up");
+        const shareBtn = document.getElementById("share-button");
+        const postContainer = document.getElementById("my-post");
+        const postArea = document.getElementById("txtpost");
+        const postareaContainer = document.getElementById("textarea");
+
+
+        postArea.addEventListener("click", function () {
+            postContainer.style.height = "30vh";
+            postArea.style.fontSize = "29px"
+            postArea.style.lineHeight = "28px"
+            postArea.style.color = "#1d2129"
+            shareBtn.style.display = "block";
+
+
+            postContainer.style.zIndex = "3000";
+            popUp.style.display = "block";
+        });
+
+        window.onclick = function (event) {
+            if (event.target == popUp) {
+                popUp.style.display = "none";
+                postContainer.style.height = "20vh";
+                postArea.style.fontSize = "16px"
+                postArea.style.lineHeight = "28px"
+                postArea.style.color = "#1d2129"
+                shareBtn.style.display = "none";
+
+                postContainer.style.zIndex = "0";
+                popUp.style.display = "none";
+            }
+        }
+
+        $('.carousel-item', '.show-neighbors').each(function () {
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+        }).each(function () {
+            var prev = $(this).prev();
+            if (!prev.length) {
+                prev = $(this).siblings(':last');
+            }
+            prev.children(':nth-last-child(2)').clone().prependTo($(this));
+        });
+
+    </script>
+</body>
+</html>

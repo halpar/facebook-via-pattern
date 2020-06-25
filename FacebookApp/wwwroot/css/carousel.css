@@ -1,0 +1,128 @@
+.show-neighbors {
+  overflow: hidden;
+}
+.show-neighbors .carousel-indicators {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+.show-neighbors .carousel-control-prev,
+.show-neighbors .carousel-control-next {
+  width: 5%;
+  z-index: 11;
+}
+
+.show-neighbors:hover .carousel-control-prev:hover,
+.show-neighbors:hover .carousel-control-next:hover{
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.show-neighbors .carousel-inner {
+  width: 120%;
+  left: -10%;
+}
+
+.carousel-inner {
+  height: 100%;
+  float: left;
+}
+
+.show-neighbors .carousel-item-next:not(.carousel-item-left),
+.show-neighbors .carousel-item-right.active {
+  -webkit-transform: translate3d(33%, 0, 0);
+  transform: translate3d(33%, 0, 0);
+}
+.show-neighbors .carousel-item-prev:not(.carousel-item-right),
+.show-neighbors .carousel-item-left.active {
+  -webkit-transform: translate3d(-33%, 0, 0);
+  transform: translate3d(-33%, 0, 0);
+}
+.show-neighbors .user-card {
+  float: left;
+  position: relative;
+  margin-left: 1%;
+  width: 32.3333%;
+  height: 100%;
+}
+
+.carousel-wrapper {
+  height: 30vh;
+  float: left;
+  width: 100%;
+}
+
+/*Sorun var*/
+#carousel-recommended-connections {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item {
+  float: left;
+  height: 100%;
+}
+.user-card {
+  border: 1px solid lightgray;
+  background-color: #ffffff;
+}
+
+.user-card-image {
+  float: left;
+  display: block;
+  height: 70%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.user-card-image img {
+  float: left;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.user-card-details {
+  float: left;
+  width: 100%;
+  height: 15% !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.user-card-details p{
+  color: #385898;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.user-card-details span{
+  float: left;
+  color: #606770;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+.user-card-footer {
+  padding: 6px;
+  float: left;
+  background-color: black;
+  width: 100%;
+  height: 15%;
+  background-color: #ffffff;
+}
+
+#send-friend-req {
+  border-radius: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  height: 100%;
+  float: left;
+  width: 100%;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+
+
